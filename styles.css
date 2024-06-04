@@ -4,6 +4,7 @@ body, html {
     font-family: Arial, sans-serif;
     background: url('background.png') no-repeat center center fixed; 
     background-size: cover;
+    font-family: 'Quicksand';font-size: 23px;
 }
 
 header {
@@ -11,6 +12,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    font-family: 'Quicksand';
 }
 
 
@@ -37,6 +39,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+nav ul li a:active {
+    color: blue; 
 }
 
 .name {
@@ -74,9 +80,5 @@ nav ul li a {
     text-decoration: none;
 }
 
-.contact-link a:hover {
-    background-color: #444444;
-    border-color: #AAA;
-}
 
 

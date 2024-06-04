@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Quicksandbold;
+    src: url(../Font/Quicksand-Bold.ttf);
+}
 
 .name {
     height: 24vh;
@@ -9,7 +13,7 @@
     text-align: center;
     font-family: 'Quicksand';
     font-size: 20px;
-    font-weight: bold;
+    font-family: 'Quicksandbold';
 }
 
 

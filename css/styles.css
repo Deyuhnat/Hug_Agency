@@ -3,7 +3,7 @@
     src: url(../Font/Quicksand-Bold.ttf);
 }
 
-body, html {
+header {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@ body, html {
     font-size: 23px;
 }
 
-header {
+.topheader {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,31 +27,45 @@ header {
     width: auto; 
 }
 
-header .logo {
+.topheader .logo {
     font-size: 30px;
     color: white;
 }
 
-nav ul {
+.menu .menulist {
     list-style: none;
     display: flex;
 }
 
-nav ul li {
+.menu .menulist .menuitem {
     margin-left: 40px;
 }
 
-nav ul li a {
+.menu .menulist .contact-link {
+    margin-left: 40px;
+}
+
+.menu .menulist .menuitem .menulink {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:active {
+.menu .menulist .contact-link .menulink {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu .menulist .menuitem .menulink:active {
     color: blue; 
 }
 
-.name {
+.menu .menulist .contact-link .menulink:active {
+    color: blue; 
+}
+
+.title {
     height: 16vh;
     display: flex;
     flex-direction: column;
@@ -78,7 +92,7 @@ nav ul li a:active {
     height: 40px;
 }
 
-.contact-link a {
+.contact-link .menulink {
     border: 1.7px solid #FFFFFF; 
     padding: 10px 20px; 
     border-radius: 30px; 
@@ -86,5 +100,81 @@ nav ul li a:active {
     text-decoration: none;
 }
 
+.introduction {
+    width: 1440px;
+    height: 800px;
+    gap: 0px;
+    opacity: 0px;
+}
 
+.name {
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #220440;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-family: 'Quicksandbold';
+}
+
+
+.intro {
+    position: relative;
+    width: flex;
+    height: flex;
+    top: 10px;
+    left: 450px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.script{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    top: 180%;
+    background: #6823CF;
+    color: white;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 30px 30px; 
+    font-family: 'Quicksand';
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background1{
+    position: absolute;
+    left: 17%;
+    gap: 0px;
+    opacity: 0.1px;
+    width: 200px;
+    height: 200px;
+    top: 190%;
+    z-index: -1;
+}
+
+
+.background2{
+    position: absolute;
+    left: 19%;
+    width: 200px;
+    height: 200px;
+    top: 160%;
+}
+
+.background3{
+    position: absolute;
+    left: 85%;
+    width: 200px;
+    height: 200px;
+    top: 150%;
+}
 

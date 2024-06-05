@@ -1,180 +1,378 @@
 @font-face {
-    font-family: Quicksandbold;
-    src: url(../Font/Quicksand-Bold.ttf);
+  font-family: Quicksandbold;
+  src: url(../Font/Quicksand-Bold.ttf);
 }
 
 header {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('../pic/background.png') no-repeat center center fixed; 
-    background-size: cover;
-    font-family: 'Quicksandbold';
-    font-size: 23px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../pic/background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Quicksandbold";
+  font-size: 23px;
+  width: flex;
+  height: 800px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .topheader {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Quicksand';
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  font-family: "Quicksand";
 }
 
-
-.logo img {
-    height: 100px;  
-    width: auto; 
-}
-
-.topheader .logo {
-    font-size: 30px;
-    color: white;
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 .menu .menulist {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.topheader .logo {
+  font-size: 30px;
+  color: white;
+}
+
+.menu .menulist {
+  list-style: none;
+  display: flex;
 }
 
 .menu .menulist .menuitem {
-    margin-left: 40px;
+  margin-left: 100px;
 }
 
 .menu .menulist .contact-link {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .menu .menulist .menuitem .menulink {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .menu .menulist .contact-link .menulink {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .menu .menulist .menuitem .menulink:active {
-    color: blue; 
+  color: blue;
 }
 
 .menu .menulist .contact-link .menulink:active {
-    color: blue; 
+  color: blue;
 }
 
 .title {
-    height: 16vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .social {
-    position: fixed;
-    top: 50%;
-    right: 10px;    
-    transform: translateY(-50%);
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .social a {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .social img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .contact-link .menulink {
-    border: 1.7px solid #FFFFFF; 
-    padding: 10px 20px; 
-    border-radius: 30px; 
-    color: white; 
-    text-decoration: none;
+  border: 1.7px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
 }
 
 .introduction {
-    width: 1440px;
-    height: 800px;
-    gap: 0px;
-    opacity: 0px;
+  width: flex;
+  height: 800px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: white;
 }
 
 .name {
-    height: 24vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #220440;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-size: 20px;
-    font-family: 'Quicksandbold';
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #220440;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-family: "Quicksandbold";
 }
 
+.teamreview {
+  background-color: white;
+  height: 700px;
+}
 
 .intro {
-    position: relative;
-    width: flex;
-    height: flex;
-    top: 10px;
-    left: 450px;
-    gap: 0px;
-    opacity: 0px;
-
+  position: relative;
+  width: flex;
+  height: flex;
+  top: 10px;
+  left: -5%;
+  gap: 0px;
+  opacity: 0px;
+  order: 1;
 }
 
-.script{
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 50%;
-    top: 180%;
-    background: #6823CF;
-    color: white;
-    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding: 30px 30px; 
-    font-family: 'Quicksand';
-    font-size: 15px;
+.script {
+  position: absolute;
+  order: 2;
+  width: 30%;
+  height: 300px;
+  left: 67%;
+  transform: translateX(-50%);
+  top: 40%;
+  background: #6823cf;
+  color: white;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  font-family: "Quicksand";
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background1 {
+  position: absolute;
+  left: 25%;
+  gap: 0px;
+  opacity: 0.1px;
+  width: 200px;
+  height: 200px;
+  top: 60%;
+  z-index: -1;
+}
+
+.background2 {
+  position: absolute;
+  left: 25%;
+  width: 20%;
+  height: auto;
+  top: 10%;
+}
+
+.background3 {
+  position: absolute;
+  left: 85%;
+  width: 20%;
+  height: auto;
+  top: 5%;
+}
+
+.service {
+  width: flex;
+  height: 800px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #f0fcfc;
+}
+
+/* Media Query for devices with a width of 1200px */
+@media only screen and (max-width: 1200px) {
+  header,
+  .service,
+  .introduction,
+  .teamreview {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .topheader {
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu .menulist {
     justify-content: center;
+  }
+
+  .menu .menulist .menuitem,
+  .menu .menulist .contact-link {
+    margin-left: 20px;
+  }
+
+  .menu .menulist .menuitem .menulink,
+  .menu .menulist .contact-link .menulink {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .social {
+    position: fixed;
+    top: 35%;
+    right: 20px;
+    transform: none;
+    z-index: 1;
+  }
+
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name,
+  .script {
+    font-size: 14px;
+  }
+
+  .intro {
+    height: auto;
+    left: 0%;
+    width: 100%;
+  }
+
+  .script {
+    /* top: -10px; */
+    width: 100%;
+    height: auto;
+    left: 4%;
+    top: auto;
+    transform: translateX(-5%);
+  }
+
+  .background1,
+  .background2,
+  .background3 {
+    width: 15%;
+    height: 15%;
+    top: 180%;
+  }
+
+  .background2,
+  .background3 {
+    display: none;
+  }
 }
 
-.background1{
+/* Media Query for devices with a width of 770px */
+@media only screen and (max-width: 770px) {
+  .topheader {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
     position: absolute;
-    left: 17%;
-    gap: 0px;
-    opacity: 0.1px;
-    width: 200px;
-    height: 200px;
-    top: 190%;
-    z-index: -1;
-}
+    top: 20%;
+    right: 5%;
+    z-index: 1000;
+    cursor: pointer;
+  }
 
-
-.background2{
+  .menu .menulist {
+    display: none;
+    flex-direction: column;
+    width: 50%;
     position: absolute;
-    left: 19%;
-    width: 200px;
-    height: 200px;
-    top: 160%;
-}
+    background: #2a2f36;
+    top: 60px;
+    right: 5%;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    border-top: 4px solid white;
+  }
 
-.background3{
-    position: absolute;
-    left: 85%;
-    width: 200px;
-    height: 200px;
-    top: 150%;
-}
+  .menu .menulist.show {
+    display: flex;
+    animation: slideDown 0.3s ease-out forwards;
+  }
 
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .menu .menulist .menuitem {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu .menulist .contact-link {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu .menulist .menuitem,
+  .menu .menulist .contact-link {
+    margin: 10px 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .menu .menulist .menuitem a,
+  .menu .menulist .contact-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+  .menu .menulist .menuitem:hover,
+  .menu .menulist .contact-link:hover {
+    background-color: 3B4149;
+  }
+}

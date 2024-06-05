@@ -206,15 +206,62 @@ header {
 }
 
 .service {
-  width: flex;
-  height: 800px;
+  width: auto;
+  height: auto;
   gap: 0px;
   opacity: 0px;
   background-color: #f0fcfc;
 }
 
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Quicksandbold";
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 20%;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Quicksandbold";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
 /* Media Query for devices with a width of 1200px */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1415px) {
   header,
   .service,
   .introduction,
@@ -281,9 +328,9 @@ header {
     /* top: -10px; */
     width: 100%;
     height: auto;
-    left: 4%;
+    left: 0%;
     top: auto;
-    transform: translateX(-5%);
+    transform: translateX(-2%);
   }
 
   .background1,
@@ -292,11 +339,20 @@ header {
     width: 15%;
     height: 15%;
     top: 180%;
+    display: none;
   }
 
   .background2,
   .background3 {
     display: none;
+  }
+
+  .service {
+    width: flex;
+    height: auto;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #f0fcfc;
   }
 }
 
@@ -304,6 +360,11 @@ header {
 @media only screen and (max-width: 770px) {
   .topheader {
     position: relative;
+  }
+
+  .content-section {
+    width: flex;
+    height: 375;
   }
 
   .menu-icon {

@@ -144,7 +144,7 @@ header {
   height: 700px;
 }
 
-.intro {
+.intro img {
   position: relative;
   width: flex;
   height: flex;
@@ -535,6 +535,16 @@ header {
   .category-item {
     width: auto;
   }
+  .bottom-slider {
+    font-size: 55%;
+  }
+
+  .decorative-line {
+    position: absolute;
+    bottom: 15%;
+    left: 41%;
+    width: 17%;
+  }
 }
 
 /* Media Query for devices with a width of 770px */
@@ -616,5 +626,68 @@ header {
   .menu .menulist .menuitem:hover,
   .menu .menulist .contact-link:hover {
     background-color: 3B4149;
+  }
+
+  .top-info {
+    flex-direction: column;
+  }
+  .bottom-slider {
+    font-size: 5%;
+  }
+
+  .slider-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .decorative-line {
+    position: absolute;
+    bottom: 15%;
+    left: 41%;
+    width: 17%;
+  }
+
+  .script {
+    /* top: 30%; */
+    width: auto;
+    height: auto;
+    left: 0%;
+    top: auto;
+    font-size: 7px;
+    /* transform: translateX(-2%); */
+    transform: translateY(-50%);
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .teamreview {
+    background-color: white;
+    height: auto;
+  }
+
+  .content-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    gap: 0px;
+    opacity: 0px;
+    order: 1;
+    display: flex;
+    align-items: center;
   }
 }

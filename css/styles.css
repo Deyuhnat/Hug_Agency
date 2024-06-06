@@ -8,6 +8,10 @@
   src: url(../Font/Montserrat-Bold.ttf);
 }
 
+* {
+  margin: 0;
+}
+
 header {
   margin: 0;
   padding: 0;
@@ -16,7 +20,7 @@ header {
   background-size: cover;
   font-family: "Quicksandbold";
   font-size: 23px;
-  width: flex;
+  width: auto;
   height: 800px;
   gap: 0px;
   opacity: 0px;
@@ -24,7 +28,7 @@ header {
 
 .topheader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   font-family: "Quicksand";
@@ -48,11 +52,6 @@ header {
 .topheader .logo {
   font-size: 30px;
   color: white;
-}
-
-.menu .menulist {
-  list-style: none;
-  display: flex;
 }
 
 .menu .menulist .menuitem {
@@ -211,8 +210,8 @@ header {
 }
 
 .service {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   gap: 0px;
   opacity: 0px;
   background-color: #f0fcfc;
@@ -267,7 +266,7 @@ header {
 
 .community {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: white;
   width: auto;
   height: auto;
@@ -298,7 +297,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: auto;
   margin: auto;
   padding: 20px 0;
   font-family: "Montserrat";
@@ -317,6 +316,8 @@ header {
 
 .image-slider {
   position: relative;
+  width: auto;
+  height: auto;
   /* width: 100%; */
   max-width: auto;
   margin: 20px;
@@ -437,20 +438,19 @@ header {
   }
 } */
 
-/* Media Query for devices with a width of 1200px */
+/* Media Query for devices with a width of 1415px */
 @media only screen and (max-width: 1415px) {
   header,
   .service,
   .introduction,
   .teamreview {
     width: 100%;
-    padding: 0 20px;
   }
 
   .topheader {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .logo img {
@@ -495,9 +495,9 @@ header {
     font-size: 14px;
   }
 
-  .intro {
+  .intro img {
     height: auto;
-    left: 0%;
+    left: auto;
     width: 100%;
   }
 
@@ -506,7 +506,8 @@ header {
     width: 100%;
     height: auto;
     left: 0%;
-    top: auto;
+    top: 50%;
+    font-size: 20px;
     transform: translateX(-2%);
   }
 
@@ -550,7 +551,7 @@ header {
 /* Media Query for devices with a width of 770px */
 @media only screen and (max-width: 770px) {
   .topheader {
-    position: relative;
+    /* position: relative; */
   }
 
   .content-section {
@@ -560,35 +561,39 @@ header {
 
   .menu-icon {
     display: block;
-    position: absolute;
-    top: 20%;
+    /* position: absolute; */
+    top: 0%;
     right: 5%;
     z-index: 1000;
     cursor: pointer;
   }
 
+  .menu {
+    display: none;
+  }
+
   .menu .menulist {
     display: none;
     flex-direction: column;
-    width: 50%;
-    position: absolute;
+    width: auto;
+    position: relative;
     background: #2a2f36;
-    top: 60px;
-    right: 5%;
+    top: 0%;
+    right: 100%;
     padding: 20px 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     border-top: 4px solid white;
   }
 
   .menu .menulist.show {
-    display: flex;
+    display: none;
     animation: slideDown 0.3s ease-out forwards;
   }
 
   @keyframes slideDown {
     0% {
       opacity: 0;
-      transform: translateY(-20px);
+      transform: translateY(-20%);
     }
     100% {
       opacity: 1;
@@ -670,8 +675,8 @@ header {
   }
 
   .content-section {
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -689,5 +694,14 @@ header {
     order: 1;
     display: flex;
     align-items: center;
+  }
+
+  .title {
+    font-size: 15px;
+    padding-top: 5%;
+  }
+
+  .service-line {
+    width: auto;
   }
 }

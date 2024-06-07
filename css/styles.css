@@ -195,10 +195,11 @@ header {
 
 .background2 {
   position: absolute;
-  left: 25%;
+  left: 15%;
   width: 20%;
   height: auto;
   top: 10%;
+  display: inline;
 }
 
 .background3 {
@@ -440,11 +441,16 @@ header {
 
 /* Media Query for devices with a width of 1415px */
 @media only screen and (max-width: 1415px) {
-  header,
+  /* header,
   .service,
-  .introduction,
+  .introduction, */
   .teamreview {
     width: 100%;
+  }
+
+  .teamreview {
+    background-color: white;
+    height: 700px;
   }
 
   .topheader {
@@ -508,7 +514,7 @@ header {
     left: 0%;
     top: 50%;
     font-size: 20px;
-    transform: translateX(-2%);
+    /* transform: translateX(-2%); */
   }
 
   .background1,

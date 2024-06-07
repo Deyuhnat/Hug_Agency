@@ -370,6 +370,7 @@ header {
   text-align: center;
   background: linear-gradient(180deg, rgba(28, 2, 51, 0) 0%, #1c0233 100%);
   padding: 10px 0;
+  font-family: "Quicksand";
 }
 
 .image-text .title-slider,
@@ -379,7 +380,7 @@ header {
 
 .decorative-line {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 41%;
   width: 17%;
 }
@@ -542,7 +543,7 @@ header {
   .category-item {
     width: auto;
   }
-  .bottom-slider {
+  .bottom-slider .image-text {
     font-size: 55%;
   }
 
@@ -642,6 +643,12 @@ header {
   .top-info {
     flex-direction: column;
   }
+
+  .line-title-commu img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .bottom-slider {
     font-size: 5%;
   }

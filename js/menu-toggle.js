@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready(function () {
   $(".collab-parter").slick({
     centerMode: true,
-    // centerPadding: '60px',
+    centerPadding: "60px",
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,

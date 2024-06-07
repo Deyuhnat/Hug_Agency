@@ -398,19 +398,26 @@ header {
 .category-icons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 15px;
   margin-top: -1%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.category-icons::-webkit-scrollbar {
+  display: none;
 }
 
 .category-item {
   display: flex;
   align-items: center;
   width: 6%;
+  flex: 0 0 auto;
 }
 
 .category-item img {
-  width: 16px;
+  width: 28px;
   height: auto;
 }
 
@@ -419,6 +426,7 @@ header {
   position: relative;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 5px;
   margin-left: 5%;
   text-align: center;
   font-family: "Quicksand";
@@ -431,7 +439,7 @@ header {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   background-color: #00bfff;
   transform-origin: bottom right;
@@ -815,5 +823,14 @@ header {
     width: 35px;
     height: 35px;
     font-size: 10px;
+  }
+
+  .category-item {
+    width: auto;
+    margin-right: 15px;
+  }
+
+  .category-icons {
+    justify-content: flex-start;
   }
 }

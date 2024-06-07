@@ -707,7 +707,65 @@ header {
     padding-top: 5%;
   }
 
-  .service-line {
-    width: auto;
+  .service-line img {
+    width: 100%;
+    /* font-size: 10%; */
+  }
+
+  .services-title {
+    margin-top: 20px;
+  }
+
+  .service {
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #f0fcfc;
+  }
+
+  .services-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .service-item {
+    width: 20%;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    font-family: "Quicksandbold";
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+  }
+
+  .service-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .name {
+    height: 24vh;
+    font-size: 16px;
+  }
+
+  .intro-line img {
+    width: 100%;
   }
 }

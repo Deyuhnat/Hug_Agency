@@ -578,7 +578,10 @@ header {
 
   .teamreview {
     background-color: white;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
   }
 
   .topheader {
@@ -630,28 +633,32 @@ header {
   }
 
   .intro img {
-    height: auto;
-    left: auto;
     width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 0;
   }
 
   .script {
-    /* top: -10px; */
-    width: 100%;
-    height: auto;
-    left: 45%;
-    top: 50%;
-    font-size: 14px;
-    /* transform: translateX(-2%); */
-    padding: 5%;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
   }
 
   .background1,
   .background2,
   .background3 {
-    width: 15%;
-    height: 15%;
-    top: 180%;
     display: none;
   }
 
@@ -800,15 +807,21 @@ header {
     font-size: 140%;
   }
 
-  .script {
-    /* top: 30%; */
+  /* .script {
     width: auto;
     height: auto;
     left: 0%;
     top: auto;
     font-size: 12px;
-    /* transform: translateX(-2%); */
     transform: translateY(-50%);
+  } */
+
+  .script {
+    /* width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px; */
+    z-index: 3;
   }
 
   .services-container {
@@ -829,7 +842,7 @@ header {
     align-items: center;
   }
 
-  .intro img {
+  /* .intro img {
     position: relative;
     width: 100%;
     height: auto;
@@ -840,6 +853,11 @@ header {
     order: 1;
     display: flex;
     align-items: center;
+  } */
+
+  .intro img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .title {

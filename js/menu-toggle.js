@@ -39,11 +39,11 @@ $(document).ready(function () {
   });
 });
 
-
-$(document).ready(function(){
-  $('.team-slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
+$(document).ready(function () {
+  $(".team-slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
   });
 });

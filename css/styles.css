@@ -32,6 +32,8 @@ header {
   align-items: center;
   padding: 20px;
   font-family: "Quicksand";
+  padding-left: 6%;
+  padding-right: 7%;
 }
 
 .menu-icon {
@@ -483,7 +485,7 @@ header {
 }
 
 .news-section {
-  padding: 20px;
+  padding: 1%;
   max-width: 100%;
   margin: auto;
   box-sizing: border-box;
@@ -496,7 +498,7 @@ header {
 
 .news-header {
   text-align: center;
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
   font-size: 36px;
 }
 
@@ -606,8 +608,8 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-left: 9%;
-  padding-top: 5%;
+  /* padding-left: 9%;
+  padding-top: 5%; */
   width: 50%;
 }
 
@@ -623,7 +625,7 @@ header {
   align-items: flex-start;
   padding-left: 2%;
   flex-direction: column;
-  padding-top: 4%;
+  /* padding-top: 4%; */
   width: auto;
 }
 
@@ -631,8 +633,8 @@ header {
   display: flex;
   /* align-items: flex-start; */
   flex-direction: column;
-  padding-top: 7%;
-  padding-right: 6.5%;
+  padding-top: 3%;
+  /* padding-right: 6.5%; */
 }
 
 .team-image.left {
@@ -655,6 +657,14 @@ header {
   font-size: 36px;
   margin-bottom: 20px;
   color: #220440;
+}
+
+.page-team-section {
+  padding: 6%;
+}
+
+.page-news-section {
+  /* padding: 6%; */
 }
 
 /* Responsive adjustments */
@@ -742,15 +752,16 @@ header {
   .script {
     position: relative;
     width: auto;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     top: 0;
     left: 0;
     transform: none;
     margin-top: -10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
+  }
+
+  .introdution {
+    padding: 6%;
   }
 
   .background1,
@@ -1109,7 +1120,7 @@ header {
   }
 
   .news-section {
-    padding: 0;
+    padding-bottom: 7%;
   }
 
   .news-title {
@@ -1127,5 +1138,12 @@ header {
 
   .news-header {
     font-size: 22px;
+  }
+
+  .page-team-section {
+    padding: 0%;
+  }
+  .introdution {
+    padding: 6%;
   }
 }

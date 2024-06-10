@@ -411,15 +411,6 @@ header {
   margin: 0;
 }
 
-.title-image-slider {
-  /* height: 90%; */
-}
-
-.image-text .title-slider,
-.image-text .des-slider {
-  /* margin: 20px 0; */
-}
-
 /* .decorative-line {
   position: absolute;
   bottom: 10%;
@@ -560,6 +551,112 @@ header {
   margin-top: -2%;
 }
 
+.team-section {
+  font-family: "Quicksandbold";
+}
+
+.team-section {
+  /* text-align: center; */
+  padding: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.team-images {
+  display: flex;
+}
+
+.team-image {
+  /* max-width: 200px; */
+  /* width: auto; */
+  max-width: auto;
+  margin-bottom: 20px;
+}
+
+.team-slider {
+  display: none;
+}
+
+.team-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-role {
+  color: grey;
+}
+
+.teamCEO-title {
+  display: none;
+}
+
+.cel-column1 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.teamCEO-title-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 9%;
+  padding-top: 5%;
+  width: 50%;
+}
+
+.image-column-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.ceo-column2 {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 2%;
+  flex-direction: column;
+  padding-top: 4%;
+  width: auto;
+}
+
+.ceo-column3 {
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  padding-top: 7%;
+  padding-right: 6.5%;
+}
+
+.team-image.left {
+  align-self: flex-start;
+}
+
+.team-image.right {
+  align-self: flex-end;
+  margin-right: -10%;
+}
+
+.teamCEO-title-column h1 {
+  font-family: "Quicksand";
+  font-size: 36px;
+  color: #220440;
+}
+
+.tagline-column {
+  font-family: "Quicksandbold";
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #220440;
+}
+
 /* Responsive adjustments */
 /* @media (max-width: 768px) {
   .statistics {
@@ -619,7 +716,7 @@ header {
     top: 35%;
     right: 20px;
     transform: none;
-    z-index: 1;
+    z-index: 10;
   }
 
   .social img {
@@ -645,7 +742,7 @@ header {
   .script {
     position: relative;
     width: auto;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     top: 0;
     left: 0;
@@ -681,21 +778,10 @@ header {
   /* .bottom-slider .image-text {
     font-size: 55%;
   } */
-
-  .decorative-line img {
-    /* position: absolute;
-    bottom: 15%;
-    left: 41%;
-    width: 17%; */
-  }
 }
 
 /* Media Query for devices with a width of 770px */
 @media only screen and (max-width: 912px) {
-  .topheader {
-    /* position: relative; */
-  }
-
   .content-section {
     width: flex;
     height: 375;
@@ -941,7 +1027,7 @@ header {
   .title-commu2 {
     display: flex;
     align-items: center;
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Quicksandbold";
     line-height: 46px;
     text-align: center;
@@ -983,5 +1069,63 @@ header {
 
   .news-line img {
     width: 100%;
+  }
+
+  .team-images {
+    display: none;
+  }
+
+  .team-slider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-image {
+    width: 100%;
+  }
+  /* .teamCEO-title {
+    display: block;
+  } */
+
+  .tagline {
+    font-family: "Quicksandbold";
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #220440;
+  }
+
+  .teamCEO-title h1 {
+    font-family: "Quicksand";
+    font-size: 22px;
+    color: #220440;
+  }
+
+  .teamCEO-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .news-section {
+    padding: 0;
+  }
+
+  .news-title {
+    font-size: 18px;
+  }
+
+  .team-name {
+    font-size: 22px;
+  }
+
+  .team-role {
+    font-size: 16px;
+    font-family: "Quicksand";
+  }
+
+  .news-header {
+    font-size: 22px;
   }
 }

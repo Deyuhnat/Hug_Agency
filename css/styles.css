@@ -559,7 +559,10 @@ header {
 
 .team-section {
   /* text-align: center; */
-  padding: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .tagline {
@@ -659,12 +662,46 @@ header {
   color: #220440;
 }
 
-.page-team-section {
-  padding: 6%;
+.customer {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #eff8fc;
 }
 
-.page-news-section {
-  /* padding: 6%; */
+.customer {
+  text-align: center;
+}
+
+.customer h2 {
+  font-family: "Quicksandbold";
+  font-size: 36px;
+  margin: 20px 0;
+  color: #220440;
+}
+
+.customer-logos,
+.partner-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 150px;
+  margin: 10px;
+}
+
+.customer-logos {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.partner-logos {
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 /* Responsive adjustments */
@@ -1145,5 +1182,31 @@ header {
   }
   .introdution {
     padding: 6%;
+  }
+
+  .customer-logos,
+  .partner-logos {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    width: 45%;
+    scroll-snap-align: center;
+  }
+
+  .customer-logos,
+  .partner-logos {
+    justify-content: flex-start;
+  }
+
+  .customer h2 {
+    font-size: 22px;
+  }
+
+  .cus-line {
+    width: 100%;
   }
 }

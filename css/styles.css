@@ -783,7 +783,7 @@ header {
 
 .contact-form .inline-inputs input {
   width: calc(50% - 10px); /*Adjusted width to fit larger gap*/
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .contact-form button {
@@ -807,6 +807,10 @@ header {
 .contact-lines img {
   display: flex;
   align-items: center;
+}
+
+.contact-form label {
+  display: none;
 }
 
 /* Responsive adjustments */
@@ -1328,7 +1332,7 @@ header {
   .contact-info,
   .contact-form {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   .main-title {
@@ -1341,10 +1345,25 @@ header {
 
   .contact-form .inline-inputs input {
     width: 100%;
-    margin-bottom: 15px;
   }
 
   .contact-lines img {
     width: 100%;
+  }
+
+  .contact-form .inline-inputs {
+    gap: 0px;
+  }
+
+  .contact-form button {
+    margin-top: 0px;
+  }
+
+  .contact-form label {
+    display: flex;
+    font-family: "Quicksandbold";
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: -20px;
   }
 }

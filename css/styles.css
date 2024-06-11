@@ -413,14 +413,6 @@ header {
   margin: 0;
 }
 
-/* .decorative-line {
-  position: absolute;
-  bottom: 10%;
-  left: 41%;
-  width: 17%;
-  height: 5%;
-} */
-
 .decorative-line {
   width: 17%;
   height: auto;
@@ -668,9 +660,6 @@ header {
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: #eff8fc;
-}
-
-.customer {
   text-align: center;
 }
 
@@ -702,6 +691,122 @@ header {
 .partner-logos {
   padding-top: 4%;
   padding-bottom: 4%;
+}
+
+.contact-section {
+  padding: 50px 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #220440;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Quicksandbold";
+}
+
+.contact-lines {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+.contact-info {
+  width: 45%;
+}
+
+.contact-info strong {
+  font-family: "Quicksandbold";
+  font-size: 16px;
+  display: block;
+}
+
+.contact-info p {
+  font-family: "Quicksand";
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-info .info-item img {
+  margin-right: 15px;
+}
+
+.contact-form {
+  width: 45%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 56px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Quicksand";
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  padding-left: 5px;
+}
+
+.contact-form .inline-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contact-form .inline-inputs input {
+  width: calc(50% - 10px); /*Adjusted width to fit larger gap*/
+  box-sizing: border-box; 
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #5cbbe5, #eea4c9);
+  color: white;
+  margin-top: 20px;
+  align-self: center;
+  color: #00405c;
+  font-family: "Quicksandbold";
+  height: 45px;
+  width: 210px;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to right, #357ab8, #b3005e);
+}
+
+.contact-lines img {
+  display: flex;
+  align-items: center;
 }
 
 /* Responsive adjustments */
@@ -823,9 +928,6 @@ header {
   .category-item {
     width: auto;
   }
-  /* .bottom-slider .image-text {
-    font-size: 55%;
-  } */
 }
 
 /* Media Query for devices with a width of 770px */
@@ -837,7 +939,6 @@ header {
 
   .menu-icon {
     display: block;
-    /* position: absolute; */
     top: 0%;
     right: 5%;
     z-index: 1000;
@@ -1189,24 +1290,61 @@ header {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
   }
 
   .logo {
     flex: 0 0 auto;
     width: 45%;
     scroll-snap-align: center;
-  }
-
-  .customer-logos,
-  .partner-logos {
-    justify-content: flex-start;
+    max-width: 100px;
+    width: 72px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .customer h2 {
     font-size: 22px;
   }
 
+  /* .customer-title {
+    width: 50%;
+  } */
+
   .cus-line {
+    width: 100%;
+  }
+
+  .team-section {
+    padding-bottom: 7%;
+  }
+
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .contact-form .inline-inputs {
+    flex-direction: column;
+  }
+
+  .contact-form .inline-inputs input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contact-lines img {
     width: 100%;
   }
 }

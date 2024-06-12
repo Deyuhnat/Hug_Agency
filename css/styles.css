@@ -950,6 +950,19 @@ header {
   display: none;
 }
 
+.page-sub {
+  background-image: url("../pic/background-bottom.png");
+}
+
+.last-line {
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+.last-line img {
+  width: 100%;
+}
+
 /* Responsive adjustments */
 /* @media (max-width: 768px) {
   .statistics {
@@ -1554,5 +1567,9 @@ header {
   .protect-icon {
     display: block;
     margin-top: 15px;
+  }
+
+  .last-line {
+    display: none;
   }
 }

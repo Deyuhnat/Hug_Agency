@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.querySelector(".menu-icon");
+  const menu = document.querySelector(".menu");
+  const closeMenu = document.createElement("div");
+  closeMenu.classList.add("close-menu");
+  closeMenu.innerHTML = "&times;";
+  menu.appendChild(closeMenu);
+
   if (menuIcon) {
     menuIcon.addEventListener("click", function () {
-      const menuList = document.querySelector(".menulist");
-      if (menuList) {
-        menuList.classList.toggle("show");
-      }
+      menu.classList.toggle("show");
+    });
+
+    closeMenu.addEventListener("click", function () {
+      menu.classList.remove("show");
     });
   }
 });

@@ -39,11 +39,13 @@ header {
 .menu-icon {
   display: none;
   cursor: pointer;
+  position: relative;
 }
 
 .menu .menulist {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -57,7 +59,7 @@ header {
 }
 
 .menu .menulist .menuitem {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .menu .menulist .contact-link {
@@ -67,13 +69,13 @@ header {
 .menu .menulist .menuitem .menulink {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .menu .menulist .contact-link .menulink {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .menu .menulist .menuitem .menulink:active {
@@ -126,6 +128,10 @@ header {
   gap: 0px;
   opacity: 0px;
   background-color: white;
+}
+
+.close-menu {
+  display: none;
 }
 
 .name {
@@ -1003,12 +1009,12 @@ header {
 
   .menu .menulist .menuitem,
   .menu .menulist .contact-link {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .menu .menulist .menuitem .menulink,
   .menu .menulist .contact-link .menulink {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .title {
@@ -1094,41 +1100,35 @@ header {
     display: block;
     top: 0%;
     right: 5%;
-    z-index: 1000;
-    cursor: pointer;
+    /* z-index: 1000;
+    cursor: pointer; */
   }
 
   .menu {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
   }
 
   .menu .menulist {
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: auto;
-    position: relative;
-    background: #2a2f36;
-    top: 0%;
-    right: 100%;
-    padding: 20px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    border-top: 4px solid white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .menu .menulist.show {
-    display: none;
-    animation: slideDown 0.3s ease-out forwards;
-  }
-
-  @keyframes slideDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-20%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    display: flex;
   }
 
   .menu .menulist .menuitem {
@@ -1143,24 +1143,46 @@ header {
 
   .menu .menulist .menuitem,
   .menu .menulist .contact-link {
-    margin: 10px 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    margin: 20px 0;
   }
 
-  .menu .menulist .menuitem a,
-  .menu .menulist .contact-link a {
-    color: #fff;
+  .menu .menulist .menuitem .menulink,
+  .menu .menulist .contact-link .menulink {
+    color: white;
+    font-size: 24px;
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
   }
 
   .menu .menulist .menuitem:hover,
   .menu .menulist .contact-link:hover {
     background-color: 3B4149;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .menu.show {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .top-info {
@@ -1195,20 +1217,7 @@ header {
     font-size: 140%;
   }
 
-  /* .script {
-    width: auto;
-    height: auto;
-    left: 0%;
-    top: auto;
-    font-size: 12px;
-    transform: translateY(-50%);
-  } */
-
   .script {
-    /* width: 90%;
-    margin-top: 20px;
-    padding: 15px;
-    font-size: 14px; */
     z-index: 3;
   }
 
@@ -1222,26 +1231,12 @@ header {
   }
 
   .content-section {
-    /* position: relative; */
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  /* .intro img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    gap: 0px;
-    opacity: 0px;
-    order: 1;
-    display: flex;
-    align-items: center;
-  } */
 
   .intro img {
     width: 100%;
@@ -1255,7 +1250,6 @@ header {
 
   .service-line img {
     width: 100%;
-    /* font-size: 10%; */
   }
 
   .services-title {
@@ -1372,9 +1366,6 @@ header {
   .team-image {
     width: 100%;
   }
-  /* .teamCEO-title {
-    display: block;
-  } */
 
   .tagline {
     font-family: "Quicksandbold";
@@ -1446,10 +1437,6 @@ header {
   .customer h2 {
     font-size: 22px;
   }
-
-  /* .customer-title {
-    width: 50%;
-  } */
 
   .cus-line {
     width: 100%;
@@ -1528,7 +1515,7 @@ header {
   .bottom-line-3 {
     display: block;
     width: 100%;
-    /* margin-bottom: 20px; */
+
     margin-top: -3px;
   }
 

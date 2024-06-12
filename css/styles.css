@@ -529,7 +529,6 @@ header {
 
 .news-title {
   font-size: 20px;
-  /* margin: 0 0 10px 0; */
 }
 
 .news-button {
@@ -1360,20 +1359,6 @@ header {
     justify-content: flex-start;
   }
 
-  .news-grid {
-    flex-direction: column;
-    gap: 5%;
-    margin: 4%;
-  }
-
-  .news-item {
-    flex: 1 1 100%;
-  }
-
-  .news-line img {
-    width: 100%;
-  }
-
   .team-images {
     display: none;
   }
@@ -1571,5 +1556,21 @@ header {
 
   .last-line {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  .news-grid {
+    flex-direction: column;
+    gap: 5%;
+    margin: 4%;
+  }
+
+  .news-item {
+    flex: 1 1 100%;
+  }
+
+  .news-line img {
+    width: 100%;
   }
 }
